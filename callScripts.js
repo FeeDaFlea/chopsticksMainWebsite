@@ -22,6 +22,6 @@ function makeElement(elmName, parent, properties) {
     parent.append(elm);
 }
 
-const scripts = [ "../parseText.js", "./initialDom.js", "./game.js", "./prompt.js"];
+const scripts = [ "./parseText.js", "./initialDom.js", "./game.js", "./prompt.js"];
 
 callScripts(0)
