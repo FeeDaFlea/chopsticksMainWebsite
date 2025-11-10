@@ -1,0 +1,187 @@
+* {
+    font-family: Inter, sans-serif;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+#coverDiv {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9990;
+    height: 100%;
+    width: 100%;
+    background-color: #F9F5EC;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#firstButton {
+    font-size: 18px;
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: calc(20px + 20%);
+    width: 20%;
+    height: 30%;
+    background-color: #1c7cc5;
+    border: 0;
+    border-radius: 7px;
+    transition: all 1s;
+}
+
+#secondButton {
+    font-size: 18px;
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    width: 20%;
+    height: 30%;
+    right: 10px;
+    background-color: #1c7cc5;
+    border: 0;
+    border-radius: 7px;
+    transition: all 1s;
+}
+
+#popupText{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#secondButton:hover, #firstButton:hover {
+    background-color: #1D8FE5;
+}
+
+#popupDiv {
+    white-space: nowrap;
+    box-sizing: content-box;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0px;
+    height: 170px;
+    width: 530px;
+    max-width: 95vw;
+    background-color: #4a4a4a;
+    border-radius: 10px;
+}
+
+*:not(#computerSign, #playerSign) {
+    overflow : hidden;
+}
+
+
+
+#loadingRing {
+    height: 40vh;
+    width: 40vh;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#endSplitButton{
+    z-index: 1002;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: 10vmax;
+    color: #575757;
+    top: 0;
+    background-color: #F9F5EC;
+    border: 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 50vh !important;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+#boardWrapper {
+    display: grid;
+    grid-template-areas: 
+        "tl tr"
+        "bl br";
+    background-color: #F9F5EC;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+#computerSign {
+    font-family: emoji;
+    transition: all 1s;
+    text-align: left;
+    left: 5%;
+    font-size: 3vmax;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#playerSign {
+    font-family: emoji;
+    transition: all 1s;
+    text-align: right;
+    right: 5%;
+    font-size: 3vmax;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#border {
+    font-size: 3vmax;
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    border-top: 3px dotted rgb(87, 87, 87);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.hands {
+    color: rgb(87, 87, 87);
+    font-size: 15vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    transition: all 1s;
+    overflow: hidden;
+    padding: 0;
+}
+
+@keyframes rotate {
+    from { transform: rotate(-360deg); }
+    to { transform: rotate(360deg); }
+}
+
+#rulesLink {
+    color: rgb(87, 87, 87);
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}

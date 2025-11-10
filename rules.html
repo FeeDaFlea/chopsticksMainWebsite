@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Rules | Chopsticks | yellowfang.codehs.me</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="stylesheet" href="./rules.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Welcome</h1>
+            <p>Chopsticks is traditionally played on hands between two players. However, in this website, the numbers represent hands. The human will be on the bottom side, and the robot on the top. </p>
+        <h2>How to Play</h2>
+            <p>Players take turns, choosing whether to split or hit. These actions are described below.</p>
+            <ul>
+                <li><h3>Hitting</h3> 
+                    <ul>
+                        <li>Players "hit" one of their opponent's hands with one of their own. To hit:
+                            <ol>
+                                <li>Players click on a hand to hit with.</li>
+                                <li>They click on the hand they wish to hit.</li>
+                            </ol>
+                        </li>
+                        <li>Normally, the hitter's hand's "fingers" are added to the recipient hand.</li>
+                        <ul>
+                            <li><i>Notice: If the total is exactly five, the hand is considered dead and it loses all its "fingers."</i></li>
+                            <li><i>Notice: If the total is greater than five, the hand will "roll over." It's value will be equal to the amount by which it exceeds five.</i></li>
+                            <ul>
+                                <li><i>Example: If player one's four "fingers" hit player two's three "fingers", player two's hand would have two "fingers" because four plus three is seven, and seven minus five is two.</i>
+                            </ul>
+                        </ul>
+                        <li>Players may not hit their opponents hand if it has zero fingers. The opponent's hand will appear gray to indicate that it cannot be hit.</li>
+                        <li>Also, players may not choose a hand with zero fingers. The player's hand will appear gray to indicate that it cannot be chosen.</li>
+                        <li>Whenever the value of a hand increases to five or more it will become five less.</li>
+                        
+                        </ul>
+                </li>
+                <br/>
+                <li><h3>Splitting</h3>
+                    <ul>
+                        <li>On their turn, players may move one or more "fingers" from one hand to the other.</li>
+                        <li>To enter "splitting mode," players click their own hands in any combination twice.</li>
+                        <li>In splitting mode, clicking a hand increases its value by one and decreases the other hand's value.</li>
+                        <li>When they are ready, players press the "submit" button to end their turn and pass play.</li>
+                        <li>A gray number or button is not clickable.</li>
+                        <li>Be careful! Once players enter splitting mode, they <i>must</i> split.</li>
+                        <li>The submit button can only be pressed if the new position is different.</li>
+                        <li>Players may "revive" a hand with zero fingers by transferring some of the other hand's fingers to the zero hand.</li>
+                        <ul>
+                            <li><i>Notice: Position 1-2 is the same as position 2-1.</i></li>
+                        </ul>
+                        <li>Positions with the reversed values are considered the same.</li>
+                        <li>When splitting, a hand can have up to five "fingers."</li>
+                        <li>Once a hand is full, players may not transfer more "fingers" to that hand.</li>
+                        <ul>
+                            <li><i>Notice: A player that has split to 3-5 cannot keep splitting and go to 2-6.</i></li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Goal</h2>
+                <p>Players win when both of their opponent's hands are exactly zero.</p>
+            <p id="disclaimer">By clicking the "Ready to play?" button, you agree to our <a href="https://yellowfang.codehs.me/chopsticks/disclaimer.txt">policies</a></p>
+            <script>
+                function redirect() {
+                    window.location.href = "https://yellowfang.codehs.me/chopsticks/robotA/index.html"
+                }
+            </script>
+            <button id="playNowButton" onclick="redirect()">Ready to play?</button>
+    </body>
+</html>

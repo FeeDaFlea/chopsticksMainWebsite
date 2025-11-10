@@ -1,0 +1,58 @@
+body {
+    margin: 10px;
+    background-color: #F9F5EC;
+}
+* {
+    font-family: Inter, sans-serif;
+    color: rgb(87, 87, 87);
+    tab-size: 8;
+    line-height: 150%;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 5px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    white-space: nowrap;
+    margin: 5px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    h2 {
+        font-size: 30px;
+    }
+}
+
+h3 {
+    margin: 5px;
+}
+
+.imp {
+    color: red;
+}
+
+#playNowButton:hover {
+    background-color: rgb(130, 130, 130);
+}
+
+#disclaimer {
+    font-size: 10px;
+}
+
+#playNowButton {
+    font-size: 15px;
+    border-radius: 7px;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    color: white;
+    background-color: rgb(87, 87, 87);
+    border: none;
+    height: 80px;
+    width : 170px;
+    transition: all 1s;
+}
